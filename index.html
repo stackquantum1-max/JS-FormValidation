@@ -8,132 +8,94 @@
 </head>
 <body>
 
-  <!-- Phone Container -->
   <div class="phone-container">
 
-    <!-- Fill Form Button -->
-    <div class="center-container hidden">
-  <button class="btn-open-form" data-open-btn>Fill Form</button>
-</div>
+    <!-- Start Button -->
+    <div class="button-wrapper hidden">
+      <button class="btn-open-form" data-open-btn>Fill Form</button>
+    </div>
 
-    <!-- Form Section (hidden initially) -->
+    <!-- Form Section -->
     <section class="form-section" data-form-section>
-      <h2 class="form-title">Fill the Information Below</h2>
 
-      <form class="form" data-form>
+      <!-- Fixed header -->
+      <div class="form-header">
+        <h2 class="form-title">Fill the Information Below</h2>
+        <hr>
+      </div>
 
-        <!-- Name Field -->
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input 
-            type="text" 
-            id="name" 
-            placeholder="Enter your full name" 
-            required
-            data-name
-          >
-          <div class="error-msg" data-name-error>Full name is required</div>
-        </div>
+      <!-- Scrollable form content -->
+      <div class="form-content">
+        <form class="form" data-form>
 
-        <!-- Email Field -->
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input 
-            type="email" 
-            id="email" 
-            placeholder="Enter your email"
-            required
-            data-email
-          >
-          <div class="error-msg" data-email-error>Please enter a valid email</div>
-        </div>
+          <!-- Name Field -->
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required data-name>
+            <div class="error-msg" data-name-error></div>
+          </div>
 
-        <!-- Phone Number Field -->
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input 
-            type="tel" 
-            id="phone"
-            placeholder="Enter phone number"
-            required
-            data-phone
-          >
-          <div class="error-msg" data-phone-error>Phone number is required</div>
-        </div>
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required data-email>
+            <div class="error-msg" data-email-error></div>
+          </div>
 
-        <!-- Address 1 -->
-        <div class="form-group">
-          <label for="address1">Address 1</label>
-          <input 
-            type="text"
-            id="address1"
-            placeholder="Enter main address"
-            required
-            data-address1
-          >
-          <div class="error-msg" data-address1-error>Address is required</div>
-        </div>
+          <!-- Phone Field -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter phone number" required data-phone>
+            <div class="error-msg" data-phone-error></div>
+          </div>
 
-        <!-- Address 2 -->
-        <div class="form-group">
-          <label for="address2">Address 2</label>
-          <input 
-            type="text"
-            id="address2"
-            placeholder="Apartment, suite, or building"
-            data-address2
-          >
-        </div>
+          <!-- Address 1 -->
+          <div class="form-group">
+            <label for="address1">Address 1</label>
+            <input type="text" id="address1" placeholder="Enter main address" required data-address1>
+            <div class="error-msg" data-address1-error></div>
+          </div>
 
-        <!-- City -->
-        <div class="form-group">
-          <label for="city">City</label>
-          <input 
-            type="text"
-            id="city"
-            placeholder="City name"
-            required
-            data-city
-          >
-          <div class="error-msg" data-city-error>City is required</div>
-        </div>
+          <!-- Address 2 -->
+          <div class="form-group">
+            <label for="address2">Address 2</label>
+            <input type="text" id="address2" placeholder="Apartment, suite, or building" data-address2>
+          </div>
 
-        <!-- State -->
-        <div class="form-group">
-          <label for="state">State</label>
-          <input 
-            type="text"
-            id="state"
-            placeholder="State"
-            required
-            data-state
-          >
-          <div class="error-msg" data-state-error>State is required</div>
-        </div>
+          <!-- City -->
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="City name" required data-city>
+            <div class="error-msg" data-city-error></div>
+          </div>
 
-        <!-- Zip Code -->
-        <div class="form-group">
-          <label for="zip">Zip Code</label>
-          <input 
-            type="text"
-            id="zip"
-            placeholder="Zip code"
-            required
-            data-zip
-          >
-          <div class="error-msg" data-zip-error>Zip code is required</div>
-        </div>
+          <!-- State -->
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" placeholder="State" required data-state>
+            <div class="error-msg" data-state-error></div>
+          </div>
 
-        <!-- Buttons -->
-        <div class="action-buttons">
-          <button type="submit" class="btn-submit" data-submit>Submit</button>
-          <button type="button" class="btn-cancel" data-cancel>Cancel</button>
-        </div>
+          <!-- Zip Code -->
+          <div class="form-group">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" placeholder="Zip code" required data-zip>
+            <div class="error-msg" data-zip-error></div>
+          </div>
 
-      </form>
+          <!-- Buttons -->
+          <div class="action-buttons">
+            <button type="submit" class="btn-submit" data-submit>Submit</button>
+            <button type="button" class="btn-cancel" data-cancel>Cancel</button>
+          </div>
+
+        </form>
+      </div>
+
     </section>
 
   </div>
 
+  <script src="index.js"></script>
 </body>
 </html>
